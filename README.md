@@ -24,7 +24,7 @@ A plataforma conta com controle de autenticação e permissões de acesso por de
 - Google Cloud
 
 URL do site:
-https://login---dashboards.web.app/
+- https://login---dashboards.web.app/
 
 Dados de login para visualizar a tela interna do site:
 - Email: teste@gmail.com
