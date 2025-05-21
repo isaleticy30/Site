@@ -25,5 +25,5 @@ A plataforma conta com controle de autenticação e permissões de acesso por de
 - Google Cloud
 
 Dados de login para visualizar a tela interna do site:
-Email: teste@gmail.com
-Senha: 123456
+- Email: teste@gmail.com
+- Senha: 123456
