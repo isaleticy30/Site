@@ -4,13 +4,13 @@ import { getFirestore } from "firebase/firestore";
 
 // Configuração do Firebase (versão simplificada para teste)
 const firebaseConfig = {
-  apiKey: "AIzaSyD2NbuG3UJ4CH14b-DeZaVcEwcqEnvTScg",
-  authDomain: "login---dashboards.firebaseapp.com",
-  projectId: "login---dashboards",
-  storageBucket: "login---dashboards.appspot.com",
-  messagingSenderId: "885976601485",
-  appId: "1:885976601485:web:cb967bedab0961d7b863c4",
-  measurementId: "G-6E88T633DL"
+  apiKey: "",
+  authDomain: "",
+  projectId: "",
+  storageBucket: "",
+  messagingSenderId: "",
+  appId: "",
+  measurementId: ""
 };
 
 // Inicialização do Firebase
