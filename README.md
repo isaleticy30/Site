@@ -23,3 +23,7 @@ A plataforma conta com controle de autenticação e permissões de acesso por de
 - Firebase Database (NoSQL)
 - Firebase Hosting (deploy do site)
 - Google Cloud
+
+Dados de login para visualizar a tela interna do site:
+Email: teste@gmail.com
+Senha: 123456
