@@ -1,0 +1,117 @@
+/* Reseta margens do body e html */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* Container pai gigante que ocupa toda a tela */
+.login-background {
+  position: fixed; /* fica fixo na tela */
+  top: 0;
+  left: 0;
+  width: 100vw;  /* largura total da viewport */
+  height: 100vh; /* altura total da viewport */
+  background: url('./../public/wallpaper_login.png') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  z-index: 0;
+}
+
+/* Container do paralelogramo */
+.login-container {
+  width: 350px;
+  padding: 60px 40px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  text-align: center;
+  position: relative;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transform: skewX(-15deg);
+  z-index: 1; /* fica acima do fundo */
+}
+
+/* Container interno para desfazer o skew */
+.login-content {
+  transform: skewX(15deg);
+}
+
+/* Título */
+.login-container h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transform: translate(25px, 0px) skewX(0deg); /* X (direita), Y (cima) */
+}
+
+/* Campos de input */
+.login-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 15px 0;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  background: transparent;
+  color: #fff;
+  outline: none;
+}
+
+.login-container input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Botão de login */
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 30px;
+  margin-left: -40px; /* Move o botão 40px para a esquerda */
+  background-color: #28a745;
+  color: white;
+  border: 1px solid #28a745;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.3s;
+  transform: skewX(0deg); /* Compensa o skew do container interno */
+}
+
+/* Link de cadastro */
+.login-container .signup-link {
+  display: block;
+  margin-top: 20px;
+  margin-left: -50px; /* Move o link para esquerda */
+  font-size: 0.9rem;
+  color: #28a745;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+/* Toast notification */
+.Toastify__toast {
+  font-family: Arial, sans-serif;
+}
+
+/* Link de "Esqueceu a senha?" */
+.login-container .forgot-password-link {
+  display: block;
+  margin-top: 2px;
+  margin-left: -50px; /* alinhado com o "Cadastre-se" */
+  font-size: 0.8rem;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.login-container .forgot-password-link:hover {
+  color: #fff;
+}

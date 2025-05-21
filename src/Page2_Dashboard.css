@@ -1,0 +1,148 @@
+/* Fundo preto fosco total */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.5) !important; /* preto fosco suave */
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden; /* tira scroll desnecessário */
+}
+
+/* Container pai ocupando toda a tela */
+.dashboard-container {
+  position: relative;  /* base para posicionar filhos absolute */
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: visible; /* permite overflow caso precise */
+  z-index: 0;
+  background: transparent; /* deixa fundo transparente pra mostrar o body atrás */
+}
+
+/* Garante que os elementos fiquem acima do fundo */
+.ml-card,
+.dashboard-item {
+  position: relative;
+  z-index: 1; /* fica acima do fundo */
+}
+
+/* Titulo e Botão */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: linear-gradient(145deg, #324a63, #243444);
+  box-shadow:
+    4px 4px 10px rgba(0, 0, 0, 0.5),
+    -4px -4px 10px rgba(255, 255, 255, 0.05),
+    inset 2px 2px 5px rgba(255, 255, 255, 0.05),
+    inset -2px -2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  color: white;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+.dashboard-header h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+/* Botão de Sair */
+.logout-button, .back-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.logout-button {
+  background-color: #e74c3c;
+  color: white;
+}
+.logout-button:hover {
+  background-color: #c0392b;
+}
+
+/* Botão de voltar */
+.back-button {
+  background-color: #3498db;
+  color: white;
+}
+.back-button:hover {
+  background-color: #2980b9;
+}
+
+/* Caixa onde está a logo de ML - posicionável em qualquer canto */
+.content-area {
+  position: absolute; /* tira do fluxo normal */
+  top: 50px;
+  left: 1px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  z-index: 2; /* acima dos outros */
+}
+
+/* Machine Learning Card */
+.ml-card {
+  width: 200px;
+  height: 150px;
+  border-radius: 5px;
+  background-color: #2c3e50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 20px;
+  color: #f0f0f0;
+}
+.ml-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+.ml-card img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+  filter: drop-shadow(2px 2px 6px rgba(0, 0, 0, 0.6));
+}
+.ml-card span {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #f0f0f0;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+/* Lista de Dashboards */
+.dashboard-list h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #f0f0f0;
+  text-align: center;
+}
+.dashboard-item {
+  background: #2c3e50;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #f0f0f0;
+}
+.dashboard-item:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Título do Container onde está o dashboard preditivo */
+.dashboard-item h4 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}

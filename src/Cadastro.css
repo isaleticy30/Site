@@ -1,0 +1,181 @@
+/* Reset de margens */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* Background exclusivo para cadastro */
+  .cadastro-background {
+    background: url('./../public/wallpaper_cadastro.png') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Container principal */
+  .cadastro-container {
+    width: 670px; /* Largura aumentada para acomodar o formulário */
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.9); /* Fundo quase opaco */
+    color: #fff;
+    text-align: center;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+  }
+  
+  /* Container interno */
+  .cadastro-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Título */
+  .cadastro-title {
+    margin: 0 0 25px 0;
+    font-size: 300%;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+  
+  /* Formulário */
+  .cadastro-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 600px; /* Largura aumentada */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Grupos de input */
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  /* Inputs */
+  .cadastro-input {
+    width: calc(100% - 28px); /* Ajuste para a nova largura mantendo o padding */
+    padding: 14px;
+    margin: 8px 0;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: 110%;
+    background: transparent;
+    color: #fff;
+    outline: none;
+    transition: all 0.3s;
+  }
+  
+  .cadastro-input:focus {
+    border-bottom-color: #4CAF50;
+  }
+  
+  .cadastro-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  /* Botão */
+  .cadastro-button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s;
+  }
+  
+  .cadastro-button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+  }
+  
+  .cadastro-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+    transform: none;
+  }
+  
+  /* Link de login */
+  .login-redirect {
+    margin-top: 20px;
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .login-link {
+    color: #4CAF50;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+  
+  .login-link:hover {
+    text-decoration: underline;
+    color: #45a049;
+  }
+  
+  /* Mensagens de erro */
+  .error-message {
+    color: #ff6b6b;
+    font-size: 0.85rem;
+    margin-top: 5px;
+    height: 18px;
+  }
+  
+  /* Toast notification */
+  .Toastify__toast {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 8px !important;
+  }
+
+  /* Container das abas: deixa as abas lado a lado com espaçamento */
+  .cadastro-tabs {
+    display: flex;
+    justify-content: space-between; /* espalha as abas igualmente */
+    margin-bottom: 25px; /* espaço embaixo das abas */
+  }
+
+  /* Estilo básico das abas */
+  .tab {
+    flex: 1; /* faz cada aba ocupar o mesmo tamanho */
+    padding: 12px 0; /* espaço interno em cima e embaixo */
+    margin: 0 5px; /* espaço entre as abas */
+    background: #6e6e6e; /* cinza escuro */
+    border-radius: 10px; /* borda arredondada */
+    border: none; /* remove bordas padrão */
+    color: #bbb; /* cor do texto (cinza claro) */
+    font-weight: 600; /* texto em negrito */
+    cursor: pointer; /* cursor de mãozinha ao passar */
+    transition: all 0.3s ease; /* efeito suave ao mudar estilo */
+    text-align: center; /* centraliza texto */
+  }
+
+  /* Aba ativa: destaca aba selecionada */
+  .tab.active {
+    background: #fff; /* fundo branco */
+    color: #000; /* texto preto */
+    box-shadow: 0 0 10px #ffffffaa; /* sombra branca com transparência */
+  }
+
+  /* Aba desabilitada: deixa o cursor normal e meio transparente */
+  .tab:disabled {
+    cursor: not-allowed; /* cursor proibido */
+    opacity: 0.5; /* transparente para mostrar que tá desabilitada */
+  }
