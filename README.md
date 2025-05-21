@@ -11,8 +11,7 @@ A plataforma conta com controle de autenticação e permissões de acesso por de
 - Armazenamento de dados em banco NoSQL (Firebase)
 - Site totalmente hospedado na nuvem, com link estático de acesso
 
-*Tecnologias Utilizadas*
-- Frontend e Backend:
+*Tecnologias Utilizadas: Frontend e Backend*
 - React
 - JavaScript
 - HTML & CSS
